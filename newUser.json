@@ -1,17 +1,6 @@
 [
     {
         "id": {
-            "id": 1098386069,
-            "nombre": "Kenia",
-            "apellidos": "Hernandez",
-            "dir": "Giron",
-            "tel": 3232203614,
-            "fechaR": 2000,
-            "cate": "s"
-        }
-    },
-    {
-        "id": {
             "id": 456,
             "nombre": "fghj",
             "apellidos": "fs",
