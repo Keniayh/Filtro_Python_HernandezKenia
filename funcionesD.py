@@ -18,12 +18,6 @@ def titleServ():
     print("-     SERVICIOS    -")
     print("--------------------")
 
-def regFun():
-    print("")
-    print("1. Agregar usuario \t2. Ver usuarios \n3. Actualizar Usuario \t4. Eliminar Usuarios \n5. Volver al menú anterior")
-    res = input("Ingresa número según el area a la que deseas ingresar: ")
-    if res == '1':
-        print("--> AGREGANDO NUEVO USER <--")
-        mod.addUser
-        print("--> USUARIO AÑADIDO CON EXITO <--")
+
+
 

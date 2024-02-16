@@ -1,4 +1,5 @@
 import json
+from pprint import pprint
 #AGREGAR USUARIO
 
 def addUser():
@@ -27,7 +28,11 @@ def addUser():
     with open('newUser.json', 'w') as file:
         json.dump(data, file, indent = 4)
 
-addUser()
+def viewUser():
+    with open('newUser.json', 'r') as file:
+        data = json.load(file)
+    pprint(data)
+viewUser()
 
 #AGREGAR SERVICIO
         
