@@ -31,7 +31,7 @@ while x == True:
                     res = input("Ingresa número según el area a la que deseas ingresar: ")
                     if res == '1':
                         print("--> AGREGANDO NUEVO USER <--")
-                        mod.addUser
+                        mod.addUser()
                         print("--> USUARIO AÑADIDO CON EXITO <--")
                     elif res == '2':
                         print("")

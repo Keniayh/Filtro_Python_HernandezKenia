@@ -28,17 +28,18 @@ def addUser():
     with open('newUser.json', 'w') as file:
         json.dump(data, file, indent = 4)
 
+
 def viewUser():
     with open('newUser.json', 'r') as file:
         data = json.load(file)
     pprint(data)
-viewUser()
+
 
 #AGREGAR SERVICIO
         
 def addServ():
     try:
-        with open('newUser.json', 'r') as file:
+        with open('newServ.json', 'r') as file:
             data = json.load(file)
     except FileNotFoundError:
         data = []
@@ -57,5 +58,23 @@ def addServ():
     
     data.append(planes)
     
-    with open('newUser.json', 'w') as file:
+    with open('newServ.json', 'w') as file:
         json.dump(data, file, indent = 4)
+
+def antiguedadUser():
+    try:
+        with open('newUser.json', 'r') as archivo:
+            data = json.load(archivo)
+    except FileNotFoundError:
+        data = []
+    try:
+        with open('antiguedad.json', 'r') as archivo:
+            matri = json.load(archivo)
+    except FileNotFoundError:
+        anti = {}
+
+    UserLeal = []
+
+    for userLista in data:
+        for entry userLista.get('id',[{"categoria": "No especicado"}]):
+            if entry.get("")
